@@ -46,16 +46,10 @@ Voorzie tenslotte een methode getItems() om alle elementen uit de Knapsack op te
 Voorzie unittesten voor de methode getCurrentWeight().  
 Voorzie unittesten voor de methode add() om een element toe te voegen.
 
-### Shop.java
-Deze klasse is een inventaris van alle producten (klasse Product).  
-Aan deze inventaris kan een product toegevoegd worden met de methode add(Product item).  
-Van de inventaris kan men de lijst van producten opvragen met de methode getItems().  
-Deze klasse is reeds gegeven en compleet.
-
 ### KnapsackUtil.java
 Deze klasse staat in voor het greedy algoritme.  
-De klasse bevat 1 public static methode fill met een knapsack en een Shop inventaris als argument.  
-In de fill-methode worden eerst alle producten uit de shop gesorteerd (gebruik hiervoor een methode uit de klasse Collections!).   
+De klasse bevat 1 public static methode fill met een knapsack en een lijst van producten als argument.  
+In de fill-methode worden eerst alle producten gesorteerd (gebruik hiervoor een methode uit de klasse Collections!).   
 Vervolgens probeer je deze gesorteerde producten 1 voor 1 toe te voegen aan de Knapsack.
 
 ### Robbery.java (main)
@@ -112,15 +106,9 @@ Voorzie tenslotte een methode getItems() om alle elementen uit de Knapsack op te
 Voorzie unittesten voor de methode getCurrentWeight().  
 Voorzie unittesten voor de methode add() om een element toe te voegen.
 
-### LondonAttractions.java
-Deze klasse is een inventaris van alle attracties in Londen (klasse LondonAttraction).  
-Aan deze inventaris kan een attractie toegevoegd worden met de methode add(Attraction item).  
-Van de inventaris kan men de lijst van attracties opvragen met de methode getItems().  
-Deze klasse is reeds gegeven en compleet.
-
 ### KnapsackUtil.java
 Deze klasse staat in voor het greedy algoritme.  
-De klasse bevat 1 public static methode fill met een knapsack en een LondonAttractions inventaris als argument.  
+De klasse bevat 1 public static methode fill met een knapsack en een lijst van attracties in Londen als argument.  
 In de fill-methode worden eerst alle attracties uit de inventaris gesorteerd (gebruik hiervoor een methode uit de klasse Collections!).
 Vervolgens probeer je deze gesorteerde attracties 1 voor 1 toe te voegen aan de Knapsack.
 
