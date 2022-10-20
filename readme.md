@@ -21,6 +21,20 @@ Momenteel hebben we echter voldoende aan een greedy algoritme dat ons probleem r
 ### KnapsackFullException.java
 Voorzie deze checked exception klasse. Voorzie een constructor waarbij je een foutboodschap kan meegeven.
 
+### Product.java
+Een product heeft 3 eigenschappen: name, weight en price. 
+Voorzie een constructor met 3 parameters.
+Voorzie getters en setters.  
+Voorzie een zinvolle toString()-methode.  
+Zorg ervoor dat een product kan vergeleken/gesorteerd worden op basis van zijn prijs.   
+Dit kan je doen aan de hand van compareTo().  
+Een negatieve waarde krijg je als de prijs van “this”-object groter is, dan de prijs van de opgegeven parameter.   
+Een positieve waarde wordt gegeven wanneer de prijs van “this” object kleiner is dan de prijs van de opgegeven parameter.   
+Het resultaat is 0 als de prijzen van beide objecten gelijk zijn.  
+
+### ProductTest.java
+Voorzie unittesten voor de compareTo() methode.
+
 ### Knapsack.java
 Deze klasse representeert de rugzak met een bepaald maximum gewicht.  
 In de constructor geef je de maximumCapacity van de Knapsack mee.  
@@ -31,18 +45,6 @@ Voorzie tenslotte een methode getItems() om alle elementen uit de Knapsack op te
 ### KnapsackTest.java
 Voorzie unittesten voor de methode getCurrentWeight().  
 Voorzie unittesten voor de methode add() om een element toe te voegen.
-
-### Product.java
-Een product heeft 3 eigenschappen: name, weight en price. Voorzie getters en setters.  
-Voorzie een zinvolle toString()-methode.  
-Zorg ervoor dat een product kan vergeleken/gesorteerd worden op basis van zijn prijs.   
-Dit kan je doen aan de hand van compareTo().  
-Een negatieve waarde krijg je als de prijs van “this”-object groter is, dan de prijs van de opgegeven parameter.   
-Een positieve waarde wordt gegeven wanneer de prijs van “this” object kleiner is dan de prijs van de opgegeven parameter.   
-Het resultaat is 0 als de prijzen van beide objecten gelijk zijn.  
-
-### ProductTest.java
-Voorzie unittesten voor de compareTo() methode.
 
 ### Shop.java
 Deze klasse is een inventaris van alle producten (klasse Product).  
@@ -84,8 +86,20 @@ Ons greedy algoritme gaat bepalen wat we in London gaan doen!
 
 ![Use case 2 Citytrip](./assets/images/Knapsack-UseCase2-Citytrip-items.png)
 
-### KnapsackFullException.java
-Voorzie deze checked exception klasse. Voorzie een constructor waarbij je een foutboodschap kan meegeven.
+### Attraction.java
+Een Attraction heeft 3 eigenschappen: name, time en rating. 
+Voorzie een constructor met 3 parameters.
+Voorzie getters en setters.  
+Voorzie een zinvolle toString()-methode.  
+Zorg ervoor dat een attraction kan vergeleken/gesorteerd worden op basis van zijn rating.  
+De compareTo wordt geïmplementeerd adhv de rating van een attractie.  
+Een negatieve waarde krijg je als de rating van “this”-object groter is, dan de rating van de opgegeven parameter.  
+Een positieve waarde wordt gegeven wanneer de rating van “this” object kleiner is dan de rating van de opgegeven parameter.  
+Het resultaat is 0 als de ratings van beide objecten gelijk zijn.  
+De methode getWeight() geeft de tijd terug die je voor een attractie voorziet.
+
+### AttractionTest.java
+Voorzie unittesten voor de compareTo() methode.
 
 ### Knapsack.java
 Deze klasse representeert het weekend met een maximum aantal dagen.  
@@ -97,19 +111,6 @@ Voorzie tenslotte een methode getItems() om alle elementen uit de Knapsack op te
 ### KnapsackTest.java
 Voorzie unittesten voor de methode getCurrentWeight().  
 Voorzie unittesten voor de methode add() om een element toe te voegen.
-
-### Attraction.java
-Een Attraction heeft 3 eigenschappen: name, time en rating. Voorzie getters en setters.  
-Voorzie een zinvolle toString()-methode.  
-Zorg ervoor dat een attraction kan vergeleken/gesorteerd worden op basis van zijn rating.  
-De compareTo wordt geïmplementeerd adhv de rating van een attractie.  
-Een negatieve waarde krijg je als de rating van “this”-object groter is, dan de rating van de opgegeven parameter.  
-Een positieve waarde wordt gegeven wanneer de rating van “this” object kleiner is dan de rating van de opgegeven parameter.  
-Het resultaat is 0 als de ratings van beide objecten gelijk zijn.  
-De methode getWeight() geeft de tijd terug die je voor een attractie voorziet.
-
-### AttractionTest.java
-Voorzie unittesten voor de compareTo() methode.
 
 ### LondonAttractions.java
 Deze klasse is een inventaris van alle attracties in Londen (klasse LondonAttraction).  
