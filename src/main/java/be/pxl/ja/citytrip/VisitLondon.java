@@ -2,8 +2,8 @@ package be.pxl.ja.citytrip;
 
 public class VisitLondon {
     public static void main(String[] args) {
-        Knapsack knapsack = new Knapsack(2);
-        LondonAttractions attractions = new LondonAttractions();
+        /*Knapsack knapsack = new Knapsack(2);
+        List<Attraction> attractions = new ArrayList<>();
 
         attractions.add(new Attraction("Westminster Abbey", 0.5, 7));
         attractions.add(new Attraction("Globe Theater", 0.5, 6));
@@ -16,6 +16,6 @@ public class VisitLondon {
         System.out.println("\nList of attractions:");
         for (Attraction attraction : knapsack.getItems()) {
             System.out.println(attraction);
-        }
+        }*/
     }
 }
